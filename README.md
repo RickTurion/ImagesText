@@ -12,7 +12,7 @@ Este repositório contém um exemplo de como usar OCR para extrair texto de imag
 
 ## Introdução
 
-O Reconhecimento Óptico de Caracteres (OCR) é uma tecnologia que permite a conversão de diferentes tipos de documentos, como arquivos digitalizados, PDFs ou fotos capturadas por uma câmera, em dados editáveis e pesquisáveis. Neste projeto, vamos utilizar o Tesseract OCR para extrair textos de imagens.
+O Reconhecimento Óptico de Caracteres (OCR) é uma tecnologia que permite a conversão de diferentes tipos de documentos, como arquivos digitalizados, PDFs ou fotos capturadas por uma câmera, em dados editáveis e pesquisáveis. Neste projeto, vamos utilizar o EasyOCR para extrair textos de imagens.
 
 ## Requisitos
 
