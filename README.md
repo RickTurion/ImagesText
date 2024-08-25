@@ -122,6 +122,7 @@ pyhon extract_text.py
 
 Exemplo:
 
+```markdown
 Texto extraído da imagem:
 +----------------------+-------------+
 | Texto                |   Confiança |
