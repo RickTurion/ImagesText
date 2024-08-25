@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 reader = easyocr.Reader(['pt'])
 
 # Caminho para a imagem no repositório
-image_path = 'input/linux.jpg'  # Certifique-se de que o caminho está correto
+image_path = 'https://raw.githubusercontent.com/RickTurion/ImagesText/11c71db717c44f44bac4e2834d41fe796907d5a7/inputs/linux.jpg'  # Certifique-se de que o caminho está correto
 
 # Carregue a imagem usando OpenCV
 image = cv2.imread(image_path)
