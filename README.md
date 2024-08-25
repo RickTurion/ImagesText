@@ -24,11 +24,11 @@ O Reconhecimento Óptico de Caracteres (OCR) é uma tecnologia que permite a con
 
 ### Usando o EasyOCR
 
-Antes de começar, é necessário instalar o EasyOCR. No exemplo será usado via Codespace diretamente no Github devido a eu estar com um computador de trabalho e não irei instalar, pois tenho limitações e instalação. Fique a vontade para fazer do seu jeito, conforme ensinado e disposto pela Elidiana Andrade nos tópicos do curso : Versionamento de Código com Git e GitHub
+ Antes de começar, é necessário instalar o EasyOCR. No exemplo será usado via Codespace diretamente no Github devido a eu estar com um computador de trabalho e não irei instalar, pois tenho limitações de instalação. Fique a vontade para fazer do seu jeito, conforme ensinado e disposto pela Elidiana Andrade nos tópicos do curso : Versionamento de Código com Git e GitHub.
 
 **Para Windows:**
 
-Requer a instalação de requisitos. Clique [aqui](https://www.jaided.ai/easyocr/install/#:~:text=Pre-install%20%28for%20Windows%29%201%201.%20From%20pip%20package,by%20%24%20pip%20install%20git%2Bgit%3A%2F%2Fgithub.com%2Fjaidedai%2Feasyocr.git%203%203.%20Docker) e siga as instruções.
+ Requer a instalação de requisitos. Clique [aqui](https://www.jaided.ai/easyocr/install/#:~:text=Pre-install%20%28for%20Windows%29%201%201.%20From%20pip%20package,by%20%24%20pip%20install%20git%2Bgit%3A%2F%2Fgithub.com%2Fjaidedai%2Feasyocr.git%203%203.%20Docker) e siga as instruções.
 
 **Para uso via Codespace:**
 
@@ -155,6 +155,8 @@ Texto extraído da imagem:
 - Visão Computacional - [Visão Computacional](https://web.dio.me/course/visao-computacional/learning/a3d1e2a4-4437-44c0-84b4-421a2977d50f?back=/track/microsoft-copilot-ai&tab=undefined&moduleId=undefined) - Diego Renan
 
 - Desafios de Projetos: Crie Um Portfólio Vencedor - [Desafios de Projetos: Crie Um Portfólio Vencedor](https://web.dio.me/course/desafios-de-projetos-crie-um-portfolio-vencedor/learning/37bfd7e4-fadd-48c2-831b-a95f84d244db?back=/track/microsoft-copilot-ai&tab=undefined&moduleId=undefined) - Venilton Falvo Jr
+
+- Desafios de Código: Aperfeiçoe Sua Lógica e Pensamento Computacional - [Desafios de Código: Aperfeiçoe Sua Lógica e Pensamento Computacional]([https://web.dio.me/course/desafios-de-projetos-crie-um-portfolio-vencedor/learning/37bfd7e4-fadd-48c2-831b-a95f84d244db?back=/track/microsoft-copilot-ai&tab=undefined&moduleId=undefined](https://web.dio.me/course/desafios-de-codigo-aperfeicoe-sua-logica-e-pensamento-computacional/learning/0742edea-d41f-4584-a8bb-d5e9866fb019?back=/track/microsoft-copilot-ai&tab=undefined&moduleId=undefined)) - Venilton Falvo Jr
 
 - Ajustes nos códigos em Python - [GPT](https://chatgpt.com/) - IA
 
