@@ -1,18 +1,22 @@
 import easyocr
 import cv2
 import matplotlib.pyplot as plt
+import requests
+import numpy as np
 
 # Crie um leitor de OCR com o idioma desejado
 reader = easyocr.Reader(['pt'])  # 'en' para inglês; adicione outros idiomas se necessário
 
-# Caminho para a imagem
-image_path = 'https://github.com/RickTurion/ImagesText/blob/main/inputs/linux.jpg'
+# Caminho para a imagem - use o link direto para a imagem
+image_url = 'https://raw.githubusercontent.com/RickTurion/ImagesText/main/inputs/linux.jpg'
+
+# Baixar a imagem
+response = requests.get(image_url)
+image_arr = np.array(bytearray(response.content), dtype=np.uint8)
+image = cv2.imdecode(image_arr, -1)
 
 # Extraia texto da imagem
-results = reader.readtext(image_path)
-
-# Carregue a imagem usando OpenCV
-image = cv2.imread(image_path)
+results = reader.readtext(image)
 
 # Desenhe as caixas delimitadoras e o texto na imagem
 for (bbox, text, prob) in results:
