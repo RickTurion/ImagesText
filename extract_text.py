@@ -5,15 +5,19 @@ import requests
 import numpy as np
 
 # Crie um leitor de OCR com o idioma desejado
-reader = easyocr.Reader(['pt'])  # 'en' para inglês; adicione outros idiomas se necessário
+reader = easyocr.Reader(['pt'])
 
-# Caminho para a imagem - use o link direto para a imagem
+# Caminho para a imagem - use o link direto para a imagem no GitHub
 image_url = 'https://github.com/RickTurion/ImagesText/blob/main/inputs/linux.jpg?raw=true'
 
 # Baixar a imagem
 response = requests.get(image_url)
 image_arr = np.array(bytearray(response.content), dtype=np.uint8)
-image = cv2.imdecode(image_arr, -1)
+image = cv2.imdecode(image_arr, cv2.IMREAD_COLOR)
+
+# Verifique se a imagem foi carregada corretamente
+if image is None:
+    raise ValueError("A imagem não pôde ser carregada. Verifique o URL ou a conexão de rede.")
 
 # Extraia texto da imagem
 results = reader.readtext(image)
