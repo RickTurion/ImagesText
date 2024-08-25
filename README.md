@@ -1,6 +1,6 @@
 # Projeto OCR - Extração de Texto de Imagens
 
-Este repositório contém um exemplo de como usar OCR para extrair texto de imagens. Usaremos o módulo EasyOCR junto com Python para esse propósito.
+ Este repositório contém um exemplo de como usar OCR para extrair texto de imagens. Usaremos o módulo EasyOCR junto com Python para esse propósito.
 
 ## Índice
 
@@ -12,7 +12,7 @@ Este repositório contém um exemplo de como usar OCR para extrair texto de imag
 
 ## Introdução
 
-O Reconhecimento Óptico de Caracteres (OCR) é uma tecnologia que permite a conversão de diferentes tipos de documentos, como arquivos digitalizados, PDFs ou fotos capturadas por uma câmera, em dados editáveis e pesquisáveis. Neste projeto, vamos utilizar o EasyOCR para extrair textos de imagens.
+ O Reconhecimento Óptico de Caracteres (OCR) é uma tecnologia que permite a conversão de diferentes tipos de documentos, como arquivos digitalizados, PDFs ou fotos capturadas por uma câmera, em dados editáveis e pesquisáveis. Neste projeto, vamos utilizar o EasyOCR para extrair textos de imagens.
 
 ## Requisitos
 
@@ -24,7 +24,7 @@ O Reconhecimento Óptico de Caracteres (OCR) é uma tecnologia que permite a con
 
 ### Usando o EasyOCR
 
- Antes de começar, é necessário instalar o EasyOCR. No exemplo será usado via Codespace diretamente no Github devido a eu estar com um computador de trabalho e não irei instalar, pois tenho limitações de instalação. Fique a vontade para fazer do seu jeito, conforme ensinado e disposto pela Elidiana Andrade nos tópicos do curso : Versionamento de Código com Git e GitHub.
+ Antes de começar, é necessário instalar o **EasyOCR**. No exemplo será usado via **Codespace** diretamente no Github devido a eu estar com um computador de trabalho e não irei instalar, pois tenho limitações de instalação. Fique a vontade para fazer do seu jeito, conforme ensinado e disposto pela Elidiana Andrade nos tópicos do curso : Versionamento de Código com Git e GitHub.
 
 **Para Windows:**
 
@@ -32,14 +32,14 @@ O Reconhecimento Óptico de Caracteres (OCR) é uma tecnologia que permite a con
 
 **Para uso via Codespace:**
 
-Passo 1 - Crie um novo repositório conforme solicitado no desafio da DIO, com o nome que quiser. No meu exemplo usarei o ImagesText.
+**Passo 1** - Crie um novo repositório conforme solicitado no desafio da DIO, com o nome que quiser. No meu exemplo usarei o ImagesText.
 
-Passo 2 - Crie uma pasta Inputs. Procure na internet algumas imagens que contenham textos, de preferência imagens mais limpas, sem muita informação neste primeiro momento para que o recurso funcione de forma mais assertiva. Você também pode tirar fotos de livros ou algo que contenha textos como placas de locais de interesse, campanhas politicas etc. Faça upload delas de preferência em formato jpg para a pasta Inputs.
+**Passo 2** - Crie uma pasta Inputs. Procure na internet algumas imagens que contenham textos, de preferência imagens mais limpas, sem muita informação neste primeiro momento para que o recurso funcione de forma mais assertiva. Você também pode tirar fotos de livros ou algo que contenha textos como placas de locais de interesse, campanhas políticas etc. Faça upload delas de preferência em formato jpg para a pasta Inputs.
 
-Passo 3 - Crie uma segunda pasta dentro da raiz do seu repositório criado no passo 1, com o nome Output. Nela você irá fazer o upload das saídas como evidências para a entrega do projeto.
+**Passo 3** - Crie uma segunda pasta dentro da raiz do seu repositório criado no passo 1, com o nome **Output**. Nela você irá fazer o upload das saídas como evidências para a entrega do projeto.
 
-Passo 4 - Na raiz do repositório criado no passo 1 crie um arquivo chamado extract_text.py. Nele insira o conteudo abaixo:
-Obs: Altere as pastas local_image_path = '' e url = '' para os caminhos das suas imagens. Coloque a imagem que o EasyOCR irá ler. Se precisarem de um exemplo vejam o meu: [aqui](https://github.com/RickTurion/ImagesText/blob/main/extract_text.py)
+**Passo 4** - Na raiz do repositório criado no passo 1 crie um arquivo chamado **extract_text.py**. Nele insira o conteudo abaixo:
+Obs: Altere as pastas **local_image_path = ''** e **url = ''** para os caminhos das suas imagens. Coloque a imagem que o EasyOCR irá ler. Se precisarem de um exemplo vejam o meu: [aqui](https://github.com/RickTurion/ImagesText/blob/main/extract_text.py)
 
 ```bash
 import urllib.request
@@ -108,15 +108,15 @@ opencv-python-headless
 numpy
 tabulate
 ```
-Passo 6 - Agora que já criamos o script em python e os arquivos que precisaremos, no seu repositório inicial (passo 1) clique em "Code" ( Botão verde), vá em Codespaces, e clique no (+). Irá abrir a tela de terminal onde executaremos o script.
+**Passo 6** - Agora que já criamos o script em python e os arquivos que precisaremos, no seu repositório inicial (passo 1) clique em "Code" ( Botão verde), vá em Codespaces, e clique no (+). Irá abrir a tela de terminal onde executaremos o script.
 
-Passo 7 - Certifique-se que está no seu repositório criado (workspace/*seu repositório*).
+**Passo 7** - Certifique-se que está no seu repositório criado (workspace/*seu repositório*).
 
-Passo 8 - Após a instalação dos recursos necessários, execute o script criado no passo 4.
+**Passo 8** - Após a instalação dos recursos necessários, execute o script criado no passo 4.
 ```bash
 pyhon extract_text.py
 ```
-Passo 9 - Se tudo tiver dado certo o script irá trazer tabulado os dados de texto da imagem escolhida por você para que o EasyOCR lê-se, contendo seu grau de confiança, onde quanto maior mais assertivo.
+**Passo 9** - Se tudo tiver dado certo o script irá trazer tabulado os dados de texto da imagem escolhida por você para que o EasyOCR lê-se, contendo seu grau de confiança, onde quanto maior mais assertivo.
 
 ## Exemplos de saída
 
@@ -160,5 +160,5 @@ Texto extraído da imagem:
 
 - Ajustes nos códigos em Python - [GPT](https://chatgpt.com/) - IA
 
-##Importante: Não se esqueçam de dar Commit e reload no terminal caso estejam usando somente o terminal Web como eu.
-Todo o conteúdo do Bootcamp oferecido pela DIO e Microsoft foi de grande valia para entendimento e atualização no conhecimento de IA, trazendo um upgrande ótimo para os profissionais que queiram integrar os recursos aos seus trabalhos, empresas e dia a dia.
+##Importante: Não se esqueçam de dar Commit e reload no terminal caso estejam usando somente o terminal Web como eu, e também instalar os complementos no Browser quando solicitado.
+Todo o conteúdo do Bootcamp oferecido pela DIO e Microsoft foi de grande valia para entendimento e atualização no conhecimento de IA, trazendo um upgrade de skills ótimo para os profissionais que queiram integrar os recursos aos seus trabalhos, empresas e dia a dia.
