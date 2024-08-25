@@ -3,6 +3,7 @@ import cv2
 import numpy as np
 import easyocr
 import os
+from tabulate import tabulate
 
 # URL da imagem
 url = 'https://raw.githubusercontent.com/RickTurion/ImagesText/main/inputs/linux.jpg'
@@ -40,9 +41,16 @@ reader = easyocr.Reader(['en'])
 # Extrair texto da imagem
 result = reader.readtext(local_image_path)
 
-# Mostrar resultados
-for detection in result:
-    print(f"Texto: {detection[1]}, Confiança: {detection[2]}")
+# Formatando a saída
+if result:
+    table = []
+    for detection in result:
+        table.append([detection[1], f"{detection[2]:.2f}"])
+
+    print("\nTexto extraído da imagem:")
+    print(tabulate(table, headers=["Texto", "Confiança"], tablefmt="grid"))
+else:
+    print("Nenhum texto foi encontrado na imagem.")
 
 # Opcional: Mostrar a imagem usando OpenCV
 # cv2.imshow('Imagem', image)
