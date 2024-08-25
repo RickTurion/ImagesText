@@ -1,37 +1,50 @@
-import easyocr
+import urllib.request
 import cv2
-import matplotlib.pyplot as plt
+import numpy as np
+import easyocr
+import os
 
-# Crie um leitor de OCR com o idioma desejado
-reader = easyocr.Reader(['pt'])
+# URL da imagem
+url = 'https://raw.githubusercontent.com/RickTurion/ImagesText/main/inputs/linux.jpg'
 
-# Caminho para a imagem no repositório
-image_path = 'https://github.com/RickTurion/ImagesText/blob/main/inputs/linux.jpg'  # Certifique-se de que o caminho está correto
+# Caminho para salvar a imagem localmente
+local_image_path = 'input/linux.jpg'
 
-# Carregue a imagem usando OpenCV
-image = cv2.imread(image_path)
+# Diretório onde a imagem será salva
+os.makedirs(os.path.dirname(local_image_path), exist_ok=True)
 
-# Verifique se a imagem foi carregada corretamente
+# Baixar a imagem
+try:
+    response = urllib.request.urlopen(url)
+    image_data = response.read()
+    
+    # Salvar a imagem localmente
+    with open(local_image_path, 'wb') as f:
+        f.write(image_data)
+    
+    print("Imagem baixada e salva com sucesso.")
+except Exception as e:
+    raise ValueError(f"Erro ao baixar a imagem: {e}")
+
+# Carregar a imagem
+image = cv2.imread(local_image_path)
+
 if image is None:
     raise ValueError("A imagem não pôde ser carregada. Verifique o caminho do arquivo.")
 
-# Extraia texto da imagem
-results = reader.readtext(image)
+print("Imagem carregada com sucesso.")
 
-# Desenhe as caixas delimitadoras e o texto na imagem
-for (bbox, text, prob) in results:
-    (top_left, top_right, bottom_right, bottom_left) = bbox
-    (top_left_x, top_left_y) = top_left
-    (bottom_right_x, bottom_right_y) = bottom_right
-    cv2.rectangle(image, (int(top_left_x), int(top_left_y)),
-                  (int(bottom_right_x), int(bottom_right_y)), (0, 255, 0), 2)
-    cv2.putText(image, text, (int(top_left_x), int(top_left_y) - 10),
-                cv2.FONT_HERSHEY_SIMPLEX, 0.9, (0, 255, 0), 2)
+# Configurar o OCR
+reader = easyocr.Reader(['en'])
 
-# Converta a imagem de BGR para RGB
-image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+# Extrair texto da imagem
+result = reader.readtext(local_image_path)
 
-# Exiba a imagem com o texto extraído usando matplotlib
-plt.imshow(image_rgb)
-plt.axis('off')  # Remove os eixos
-plt.show()
+# Mostrar resultados
+for detection in result:
+    print(f"Texto: {detection[1]}, Confiança: {detection[2]}")
+
+# Opcional: Mostrar a imagem usando OpenCV
+# cv2.imshow('Imagem', image)
+# cv2.waitKey(0)
+# cv2.destroyAllWindows()
