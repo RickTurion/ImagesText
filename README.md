@@ -156,7 +156,7 @@ Texto extraído da imagem:
 
 - Desafios de Projetos: Crie Um Portfólio Vencedor - [Desafios de Projetos: Crie Um Portfólio Vencedor](https://web.dio.me/course/desafios-de-projetos-crie-um-portfolio-vencedor/learning/37bfd7e4-fadd-48c2-831b-a95f84d244db?back=/track/microsoft-copilot-ai&tab=undefined&moduleId=undefined) - Venilton Falvo Jr
 
-- Desafios de Código: Aperfeiçoe Sua Lógica e Pensamento Computacional - [Desafios de Código: Aperfeiçoe Sua Lógica e Pensamento Computacional]([https://web.dio.me/course/desafios-de-projetos-crie-um-portfolio-vencedor/learning/37bfd7e4-fadd-48c2-831b-a95f84d244db?back=/track/microsoft-copilot-ai&tab=undefined&moduleId=undefined](https://web.dio.me/course/desafios-de-codigo-aperfeicoe-sua-logica-e-pensamento-computacional/learning/0742edea-d41f-4584-a8bb-d5e9866fb019?back=/track/microsoft-copilot-ai&tab=undefined&moduleId=undefined)) - Venilton Falvo Jr
+- Desafios de Código: Aperfeiçoe Sua Lógica e Pensamento Computacional - [Desafios de Código: Aperfeiçoe Sua Lógica e Pensamento Computacional](https://web.dio.me/course/desafios-de-codigo-aperfeicoe-sua-logica-e-pensamento-computacional/learning/0742edea-d41f-4584-a8bb-d5e9866fb019?back=/track/microsoft-copilot-ai&tab=undefined&moduleId=undefined)) - Venilton Falvo Jr
 
 - Ajustes nos códigos em Python - [GPT](https://chatgpt.com/) - IA
 
