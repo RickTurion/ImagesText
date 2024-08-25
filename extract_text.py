@@ -1,23 +1,19 @@
 import easyocr
 import cv2
 import matplotlib.pyplot as plt
-import requests
-import numpy as np
 
 # Crie um leitor de OCR com o idioma desejado
 reader = easyocr.Reader(['pt'])
 
-# Caminho para a imagem - use o link direto para a imagem no GitHub
-image_url = 'https://github.com/RickTurion/ImagesText/blob/main/inputs/linux.jpg?raw=true'
+# Caminho para a imagem no repositório
+image_path = 'input/linux.jpg'  # Certifique-se de que o caminho está correto
 
-# Baixar a imagem
-response = requests.get(image_url)
-image_arr = np.array(bytearray(response.content), dtype=np.uint8)
-image = cv2.imdecode(image_arr, cv2.IMREAD_COLOR)
+# Carregue a imagem usando OpenCV
+image = cv2.imread(image_path)
 
 # Verifique se a imagem foi carregada corretamente
 if image is None:
-    raise ValueError("A imagem não pôde ser carregada. Verifique o URL ou a conexão de rede.")
+    raise ValueError("A imagem não pôde ser carregada. Verifique o caminho do arquivo.")
 
 # Extraia texto da imagem
 results = reader.readtext(image)
