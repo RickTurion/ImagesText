@@ -8,7 +8,7 @@ import numpy as np
 reader = easyocr.Reader(['pt'])  # 'en' para inglês; adicione outros idiomas se necessário
 
 # Caminho para a imagem - use o link direto para a imagem
-image_url = 'https://raw.githubusercontent.com/RickTurion/ImagesText/main/inputs/linux.jpg'
+image_url = 'https://github.com/RickTurion/ImagesText/blob/main/inputs/linux.jpg?raw=true'
 
 # Baixar a imagem
 response = requests.get(image_url)
