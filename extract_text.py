@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 reader = easyocr.Reader(['pt'])
 
 # Caminho para a imagem no repositório
-image_path = '/workspaces/ImagesText/input/linux.jpg'  # Certifique-se de que o caminho está correto
+image_path = 'https://i.ytimg.com/vi/HF-Li4wmV6o/maxresdefault.jpg'  # Certifique-se de que o caminho está correto
 
 # Carregue a imagem usando OpenCV
 image = cv2.imread(image_path)
