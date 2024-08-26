@@ -12,7 +12,7 @@
 
 ## Introdução
 
- O Reconhecimento Óptico de Caracteres (OCR) é uma tecnologia que permite a conversão de diferentes tipos de documentos, como arquivos digitalizados, PDFs ou fotos capturadas por uma câmera, em dados editáveis e pesquisáveis. Neste projeto, vamos utilizar o EasyOCR para extrair textos de imagens.
+ O Reconhecimento Óptico de Caracteres (OCR) é uma tecnologia que permite a conversão de diferentes tipos de documentos, como arquivos digitalizados, PDFs ou fotos capturadas por uma câmera, em dados editáveis e pesquisáveis. Neste projeto, vamos utilizar o EasyOCR para extrair textos de imagens. Eu usei para efetuar a atividade os mesmos passos que vou descrever abaixo, assim pode ser que alguem possa fazer uso do mesmo caso aceito. o/
 
 ## Requisitos
 
