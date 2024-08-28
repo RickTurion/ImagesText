@@ -6,10 +6,10 @@ import os
 from tabulate import tabulate
 
 # URL da imagem
-url = 'https://raw.githubusercontent.com/RickTurion/ImagesText/main/inputs/importante.jpg'
+url = 'https://raw.githubusercontent.com/RickTurion/ImagesText/main/inputs/Imagem1.jpg'
 
 # Caminho para salvar a imagem localmente
-local_image_path = 'input/importante.jpg'
+local_image_path = 'input/imagem1.jpg'
 
 # Diretório onde a imagem será salva
 os.makedirs(os.path.dirname(local_image_path), exist_ok=True)
